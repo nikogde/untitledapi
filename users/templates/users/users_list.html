@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<body>
+
+</body>
+</html>
+<h2> Все пользователи: </h2>
+{% for user in object_list %}
+
+    <ul>
+        <li>Имя пользователя: {{ user.username }}</li>
+        <li>Пользователь: {{ user.full_name }}</li>
+        <li>Почта: {{ user.email }}</li>
+        <li>Номер контакта: {{ user.contact_no }}</li>
+        <li>Баланс: {{ user.balance }}</li>
+        <li>Адрес: {{ user.full_address }} </li>
+
+{#    <li> </li>#}
+{#    <li> </li>#}
+  </ul>
+
+
+    <body>
+<p><button>Дополнительные данные: </button></p>
+
+</body>
+
+{% endfor %}
